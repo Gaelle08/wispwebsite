@@ -1,8 +1,77 @@
-body {
-    background-color: rgb(51, 218, 252);
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  .center{
+    text-align: center;
   }
   
-  h1 {
-    color: rgb(25, 51, 181);
-    margin-left: 20px;
+  .header-container {
+    display: flex;
+    height: 70vh; /* Full height for the header */
+    overflow: hidden; /* Prevent extra white space from showing */
   }
+  
+  .header-left,
+  .header-right {
+    flex: 1; /* Split the container into two equal halves */
+  }
+  
+  .header-left {
+    padding: .5rem; /*Add padding for text*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d3e8e3; /* Optional: Background color for the left side */
+  }
+  
+  .header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-right video {
+    width: 100%; /* Make the video span the full width of the right side */
+    height: 100%; /* Make the video span the full height */
+    object-fit: cover; /* Ensures the video covers the entire container without distortion */
+  }
+  
+  .left-aligned{
+    text-align: left !important;
+  }
+
+  #products{
+    background-color: white;
+    min-height: 70vh; /* Adjust this value as needed */
+    padding: 50px 0; /* Add some vertical padding for spacing */
+  }
+
+  #deals{
+    background-color: #fbdec0;
+    min-height: 70vh; /* Adjust this value as needed */
+    padding: 50px 0; /* Add some vertical padding for spacing */
+    justify-content: flex-start;
+  }
+
+  #reviews{
+    color: black;
+    background-color: white;
+    /* background-image: url(./assets/sodabubbles.png);
+    background-size: cover; /* covers the entire element */
+    /* background-position: center; /* Centers within the element */
+    /*background-repeat: no-repeat; no repeating */
+    min-height: 50vh; /* Adjust this value as needed */
+    /* padding: 50px 0; Add some vertical padding for spacing */
+  }
+
+  #news{
+    background-color: white;
+    min-height: 70vh; /* Adjust this value as needed */
+    padding: 50px 0; /* Add some vertical padding for spacing */
+  }
+
